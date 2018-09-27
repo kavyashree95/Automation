@@ -1,30 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[test....]]>
+      <![CDATA[Data:UserName]]>
+    </line>
+    <line>
+      <![CDATA[Row:1]]>
+    </line>
+    <line>
+      <![CDATA[Test:testA is Failed & Photo is:./photo/Thu Sep 27 19_01_37 IST 2018.png]]>
     </line>
   </reporter-output>
-  <suite started-at="2018-09-26T09:49:47Z" name="Default suite" finished-at="2018-09-26T09:49:59Z" duration-ms="12122">
+  <suite started-at="2018-09-27T13:31:05Z" name="Default suite" finished-at="2018-09-27T13:31:38Z" duration-ms="33083">
     <groups>
     </groups>
-    <test started-at="2018-09-26T09:49:47Z" name="Default test" finished-at="2018-09-26T09:49:59Z" duration-ms="12122">
+    <test started-at="2018-09-27T13:31:05Z" name="Default test" finished-at="2018-09-27T13:31:38Z" duration-ms="33083">
       <class name="script.TestDemo">
-        <test-method is-config="true" signature="OpenApllication()[pri:0, instance:script.TestDemo@c03cf28]" started-at="2018-09-26T09:49:47Z" name="OpenApllication" finished-at="2018-09-26T09:49:57Z" duration-ms="9755" status="PASS">
+        <test-method is-config="true" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo@4a668b6e]" started-at="2018-09-27T13:31:05Z" name="openApp" finished-at="2018-09-27T13:31:35Z" duration-ms="30182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenApllication -->
-        <test-method signature="test()[pri:0, instance:script.TestDemo@c03cf28]" started-at="2018-09-26T09:49:57Z" name="test" finished-at="2018-09-26T09:49:57Z" duration-ms="12" status="PASS">
+        </test-method> <!-- openApp -->
+        <test-method signature="testA()[pri:0, instance:script.TestDemo@4a668b6e]" started-at="2018-09-27T13:31:35Z" name="testA" finished-at="2018-09-27T13:31:37Z" duration-ms="1562" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at script.TestDemo.testA(TestDemo.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[test....]]>
+              <![CDATA[Data:UserName]]>
+            </line>
+            <line>
+              <![CDATA[Row:1]]>
             </line>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="CloseApplication()[pri:0, instance:script.TestDemo@c03cf28]" started-at="2018-09-26T09:49:57Z" name="CloseApplication" finished-at="2018-09-26T09:49:59Z" duration-ms="2316" status="PASS">
+        </test-method> <!-- testA -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestDemo@4a668b6e]" started-at="2018-09-27T13:31:37Z" name="closeApp" finished-at="2018-09-27T13:31:38Z" duration-ms="1292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=FAILURE method=TestDemo.testA()[pri:0, instance:script.TestDemo@4a668b6e] output=Data:UserName]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test:testA is Failed & Photo is:./photo/Thu Sep 27 19_01_37 IST 2018.png]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- CloseApplication -->
+        </test-method> <!-- closeApp -->
       </class> <!-- script.TestDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
