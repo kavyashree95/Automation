@@ -20,11 +20,12 @@ public class TestDemo extends BaseTest{
 	//Assert.fail();
 	
 	Loginpage l = new Loginpage(driver);
-	String un = Utility.getXLData(INPUT_PATH, "sheet1",1,0);
+	String sheet ="loginpage";
+	String un = Utility.getXLData(INPUT_PATH, sheet,1,0);
 	l.setusername(un);
 	//Loginpage.setusername("admin");
 	Thread.sleep(1000);
-	String pw = Utility.getXLData(INPUT_PATH, "sheet1",1,1);
+	String pw = Utility.getXLData(INPUT_PATH, sheet,1,1);
 	l.setPassWord(pw);
 	//Loginpage.setPassWord("manager");
 	Thread.sleep(1000);

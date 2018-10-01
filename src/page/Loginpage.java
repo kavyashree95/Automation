@@ -15,7 +15,6 @@ public class Loginpage {
 	@FindBy(xpath="//div[.='Login ']")
 	private WebElement LoginBTN;
 		
-		//intialization
 		public Loginpage(WebDriver driver) {
 			PageFactory.initElements(driver,this);
 		}
