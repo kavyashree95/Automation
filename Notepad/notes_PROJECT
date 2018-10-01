@@ -54,5 +54,26 @@ public class Result implements ITestListener{
 	@Listeners(Result.class)
     abstract public class BaseTest implements IAutoConst {
 	
+12.Create a another test class "TestDemo2" with @Test method inside Script Package
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="script.TestDemo"/>
+      <class name="script.TestDemo2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!
 
 
+***********//using packages instead of class***********
+
+
+<suite name="Suite" parallel="tests">
+  <test  name="test">
+  <parameter name="ip" value="localhost"/>
+  <parameter name="browser" value="chrome"/>
+    <packages>
+    <package name="script"/>
+    </packages>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

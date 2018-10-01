@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="test(failed)">
+    <parameter name="ip" value="localhost"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="script.TestDemo">
+        <methods>
+          <include name="openApp"/>
+          <include name="testA"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.TestDemo -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
