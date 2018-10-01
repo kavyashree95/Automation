@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests">
-  <test  name="test">
-  <parameter name="ip" value="localhost"/>
-  <parameter name="browser" value="chrome"/>
-    <packages>
-    <package name="script"/>
-    </packages>
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="script.TestDemo"/>
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
